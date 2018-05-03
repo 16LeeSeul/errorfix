@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  root 'home/index'
+  root 'home#index'
+  
   get 'home/index'
 
   post 'home/create'
 
-  post 'home/new'
+  get 'home/new'
   
   get 'home/destroy/:id' => 'home#destroy'
   
